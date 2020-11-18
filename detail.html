@@ -8,29 +8,47 @@
 <body>
   <div class="container">
     <div class="header">
-      <img src="./assests/images/logo.png" alt="logo" height="100px" width="150px"/>
-      <a href="./login.html" target="_blank">Login</a>
+      <a href="./index.html">
+        <img src="./assests/images/logo.png" alt="logo" height="100px" width="150px"/>
+      </a>
+      <a href="./login.html" target="_self">Login</a>
     </div>
     <div class="content">
       <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu New Delhi">
-      <br />
-      <a href="./payment.html" target="_self">Book Now</a>
-      <h2>Radisson Blu Hotel</h2>
-      <span>RATING</span> <br /> <br />
-      <span>5.0 Star</span> <br /> <br />
-      <span>AMENITIES</span>
-      <ul>
-        <li>Room service</li>
-        <li>Restaurant</li>
-        <li>Business center</li>
-        <li>Fitness center</li>
-        <li>Pool</li>
-      </ul>
-      <h5>DESCRIPTION</h5>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet deserunt debitis minima vel earum! Obcaecati qui perferendis rerum error eligendi laborum placeat aut dolor veniam. Quae eius veritatis atque nam.</p>
+      <div class="booking_details">
+        <form action="./payment.html" method="GET">
+          <label for="adults">Adults:</label>
+          <input type="number" name="adults" value="1" min="1" required /> <br />
+          <label for="name">Name:</label>
+          <input type="text" name="name" required /> <br />
+          <label for="from_date">From Date:</label>
+          <input type="date" name="from_date" required /> <br />
+          <label for="to_date">To Date:</label>
+          <input type="date" name="to_date" required/> <br />
+          <label for="total">Total:</label>
+          <input type="number" name=total readonly> <br />
+          <input type="submit" value="Book Now">
+        </form>
+      </div>
+      <div class="hotel_details">
+        <h2>Radisson Blu Hotel</h2>
+        <span>RATING</span> <br /> <br />
+        <span>5.0 Star</span> <br /> <br />
+        <span>AMENITIES</span>
+        <ul>
+          <li>Room service</li>
+          <li>Restaurant</li>
+          <li>Business center</li>
+          <li>Fitness center</li>
+          <li>Pool</li>
+        </ul>
+        <h5>DESCRIPTION</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet deserunt debitis minima vel earum! Obcaecati qui perferendis rerum error eligendi laborum placeat aut dolor veniam. Quae eius veritatis atque nam.</p>
+      
+      </div>  
     </div>
     <div class="footer">
-      <a href="./contact.html" target="_blank">Contact Us</a>
+      <a href="./contact.html" target="_self">Contact Us</a>
       <div>
         <a href="https://facebook.com" target="_blank">
           <img src="./assests/images/facebook.png" alt="facebook" height="20px" width="22px" />
