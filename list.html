@@ -4,66 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>List</title>
+  <link href="styles/list.css" rel="stylesheet" />
 </head>
 <body>
   <div class="container">
-    <div class="header">
+    <header>
       <a href="./index.html">
-        <img src="./assests/images/logo.png" alt="logo" height="100px" width="150px"/>
-      </a><a href="./login.html" target="_self">Login</a>
-    </div>
+        <img id="logo" src="./assests/images/logo.png" alt="logo" />
+      </a>
+      <a href="./login.html" target="_self">Login</a>
+    </header>
     <div class="content">
-      <div class="hotel_view">
+      <div class="hotels_view">
         <ul>
-          <li><a href="#" target="_self">List View</a></li>
-          <li><a href="#" target="_self">Map View</a></li>
+          <li><a href="#list_view" target="_self">List View</a></li>
+          <li><a href="#map_view" target="_self">Map View</a></li>
         </ul>
       </div>
-      <div class="hotel_list">
-        <div class="hotel">
+      <div id="list_view">
+        <div class="hotel_card">
           <a href="./detail.html">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Raddison Blu Delhi" /> <br /> <br />
+            <img class="hotel_image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Raddison Blu Delhi" /> <br /> <br />
             <span>Radisson Blu Hotel</span> <br /> <br />
             <span>5.0 Star</span> <br /> <br />
             <span>New Delhi</span> <br /> <br />
           </a>
         </div>
-        <div class="hotel">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="The new Lalit Delhi" />  <br /> <br />
+        <div class="hotel_card">
+            <img class="hotel_image" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="The new Lalit Delhi" />  <br /> <br />
             <span>The Lalit New Delhi</span>  <br /> <br />
             <span>4.5 Star</span>  <br /> <br />
             <span>New Delhi</span>  <br /> <br />
         </div>
-        <div class="hotel">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Taj Palace" />  <br /> <br />
+        <div class="hotel_card">
+            <img class="hotel_image" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Taj Palace" />  <br /> <br />
             <span>Taj Palace</span>  <br /> <br />
             <span>4.0 Star</span>  <br /> <br />
             <span>New Delhi</span>  <br /> <br />
         </div>
       </div>
-      <div class="hotel_map">
+      <div id="map_view">
         <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="hotel map">  <br /> <br />
         <span>MAP VIEW</span>  <br /> <br />
       </div>
       </div>
     </div>
-    <div class="footer">
+    <footer>
       <a href="./contact.html" target="_self">Contact Us</a>
-      <div>
+      <section class="social_media">
         <a href="https://facebook.com" target="_blank">
-          <img src="./assests/images/facebook.png" alt="facebook" height="20px" width="22px" />
+          <img class="social_media_image" src="./assests/images/facebook.png" alt="facebook" />
         </a>
         <a href="https://instagram.com" target="_blank">
-          <img src="./assests/images/instagram.png" alt="instagram" height="20px" width="22px" />
+          <img class="social_media_image" src="./assests/images/instagram.png" alt="instagram" />
         </a>
         <a href="https://twitter.com" target="_blank">
-          <img src="./assests/images/twitter.png" alt="twitter" height="20px" width="22px" />
+          <img class="social_media_image" src="./assests/images/twitter.png" alt="twitter" />
         </a>
-      </div>
+      </section>
       <span>
         &#x000A9; 2020 ROOM SEARCH PVT LTD.
       </span>
-    </div>
+    </footer>
   </div>
 </body>
 </html>

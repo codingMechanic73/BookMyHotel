@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+#logo {
+  width: 60px;
+  height: 60px;
+}
+
+.city_image {
+  width: 150px;
+  height: 150px;
+}
+
+.social_media_image {
+  height: 20px;
+  width: 22px;
+}
