@@ -1,41 +1,108 @@
+/* General styling
+
+* {
+    margin: 0;
+    padding: 0;
+} */
+
 body {
-  margin: 0px;
-  padding: 0px;
-  background-color: #e0e0e0;
+    background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-header, footer {
-  background-color: rosybrown;
+a,
+a:hover,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: black;
+    outline: none;
 }
 
-.hotel_details {
-  background-color: rgb(132,136,139);
-  width: 50%;
-  height: 20%;
-  margin: 2% auto;
+
+/* styling header and footer */
+
+.header,
+.footer {
+    background-color: rosybrown;
+    height: 60px;
+    position: relative;
+    z-index: 10;
 }
 
-.customer_details  {
-  margin: 2%;
+.header {
+    position: sticky;
+    top: 0;
 }
 
-.payment_details {
-  margin: 2%;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 1% 2%;
+.footer {
+    position: sticky;
+    bottom: 0;
 }
 
-#logo {
-  width: 60px;
-  height: 60px;
-}
-#hotel_image{
-  height:500px;
-  width:500px;
+.header__logo {
+    width: 60px;
+    height: 60px;
 }
 
-.social_media_image {
-  height: 20px;
-  width: 22px;
+.header__login {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.social-media-section__image {
+    height: 20px;
+    width: 22px;
+}
+
+.footer__contact-us {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer__social-media-section {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer__copyright {
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* styling main content */
+
+.hotel-details {
+    background-color: rgb(132, 136, 139);
+    width: 50%;
+    height: 20%;
+    margin: 2% auto;
+}
+
+.customer-details {
+    margin: 2%;
+}
+
+.payment-details {
+    margin: 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1% 2%;
+}
+
+.hotel-details__image {
+    height: 500px;
+    width: 500px;
 }

@@ -1,38 +1,132 @@
+/* General styling
+
+* {
+    margin: 0;
+    padding: 0;
+} */
+
 body {
-  margin: 0px;
-  padding: 0px;
-  background-color: #e0e0e0;
+    background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-header, footer {
-  background-color: rosybrown;
+a,
+a:hover,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: black;
+    outline: none;
 }
 
-#logo {
-  width: 60px;
-  height: 60px;
+
+/* styling header and footer */
+
+.header,
+.footer {
+    background-color: rosybrown;
+    height: 60px;
+    position: relative;
+    z-index: 10;
 }
 
-#search_bar_section {
-  height: 380px;
-  background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
-  background-repeat:  no-repeat;
-  background-position:  center;
-  background-size: cover;
+.header {
+    position: sticky;
+    top: 0;
 }
 
-#city_card_section {
-  margin: 0 15%;
+.footer {
+    position: sticky;
+    bottom: 0;
 }
 
-.city_image {
-  width: 150px;
-  height: 150px;
-  padding: 4%;
-  border-radius: 25%;
+.header__logo {
+    width: 60px;
+    height: 60px;
 }
 
-.social_media_image {
-  height: 20px;
-  width: 22px;
+.header__login {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.social-media-section__image {
+    height: 20px;
+    width: 22px;
+}
+
+.footer__contact-us {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer__social-media-section {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer__copyright {
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* styling main content */
+
+.city-search-section {
+    height: 380px;
+    background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.city-search-section__input {
+    font-family: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+    max-width: 100%;
+    width: 470px;
+}
+
+.cities-section {
+    text-align: center;
+}
+
+.cities-section__links {
+    margin: 0 15%;
+}
+
+.cities-section__card {
+    display: inline;
+}
+
+.cities-section__image {
+    width: 150px;
+    height: 150px;
+    padding: 4%;
+    border-radius: 25%;
+}
+
+.cities-section__view-more {
+    margin: 10px;
 }

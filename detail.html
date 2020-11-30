@@ -1,70 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detail</title>
-  <link href="styles/detail.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link href="styles/detail.css" rel="stylesheet" />
 </head>
+
 <body>
-  <div class="container">
-    <header>
-      <a href="./index.html">
-        <img id="logo" src="./assests/images/logo.png" alt="logo" />
-      </a>
-      <a href="./login.html" target="_self">Login</a>
-    </header>
-    <div class="content">
-      <img id="hotel_image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu New Delhi">
-      <div class="booking_details">
-        <form id="booking_form" action="./payment.html" method="GET">
-          <label for="adults">Adults:</label>
-          <input type="number" name="adults" value="1" min="1" required /> <br />
-          <label for="name">Name:</label>
-          <input type="text" name="name" required /> <br />
-          <label for="from_date">From Date:</label>
-          <input type="date" name="from_date" required /> <br />
-          <label for="to_date">To Date:</label>
-          <input type="date" name="to_date" required/> <br />
-          <label for="total">Total:</label>
-          <input type="number" name=total readonly> <br />
-          <input type="submit" value="Book Now">
-        </form>
-      </div>
-      <div class="hotel_details">
-        <h2>Radisson Blu Hotel</h2>
-        <span>RATING</span> <br /> <br />
-        <span>5.0 Star</span> <br /> <br />
-        <span>AMENITIES</span>
-        <ul>
-          <li>Room service</li>
-          <li>Restaurant</li>
-          <li>Business center</li>
-          <li>Fitness center</li>
-          <li>Pool</li>
-        </ul>
-        <h5>DESCRIPTION</h5>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet deserunt debitis minima vel earum! Obcaecati qui perferendis rerum error eligendi laborum placeat aut dolor veniam. Quae eius veritatis atque nam.</p>
-      
-      </div>  
+    <div class="container">
+
+        <header class="header">
+            <a href="./index.html">
+                <img class="header__logo" src="./assests/images/logo.png" alt="logo" />
+            </a>
+            <a class="header__login" href="./login.html" target="_self">Login</a>
+        </header>
+
+        <main class="content">
+            <div class="hotel-hero-section">
+                <img class="hotel-hero-section__image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu New Delhi">
+            </div>
+
+            <div class="booking-details">
+                <form id="booking-details__form" action="./payment.html" method="GET">
+                    <label for="adults">Adults:</label>
+                    <input type="number" name="adults" value="1" min="1" required /> <br />
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" required /> <br />
+                    <label for="from_date">From Date:</label>
+                    <input type="date" name="from_date" required /> <br />
+                    <label for="to_date">To Date:</label>
+                    <input type="date" name="to_date" required /> <br />
+                    <label for="total">Total:</label>
+                    <input type="number" name=total readonly> <br />
+                    <input type="submit" value="Book Now">
+                </form>
+            </div>
+            <div class="hotel-details">
+                <h2>Radisson Blu Hotel</h2>
+                <span>RATING</span> <br /> <br />
+                <span>5.0 Star</span> <br /> <br />
+                <span>AMENITIES</span>
+                <ul>
+                    <li>Room service</li>
+                    <li>Restaurant</li>
+                    <li>Business center</li>
+                    <li>Fitness center</li>
+                    <li>Pool</li>
+                </ul>
+                <h5>DESCRIPTION</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet deserunt debitis minima vel earum! Obcaecati qui perferendis rerum error eligendi laborum placeat aut dolor veniam. Quae eius veritatis atque nam.
+                </p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__contact-us">
+                <a class="contact-us__link" href="./contact.html" target="_self">Contact Us</a>
+            </div>
+            <section class="footer__social-media-section">
+                <a class="social-media-section__link" href="https://facebook.com" target="_blank">
+                    <img class="social-media-section__image" src="./assests/images/facebook.png" alt="facebook" />
+                </a>
+                <a class="social-media-section__link" href="https://instagram.com" target="_blank">
+                    <img class="social-media-section__image" src="./assests/images/instagram.png" alt="instagram" />
+                </a>
+                <a class="social-media-section__link" href="https://twitter.com" target="_blank">
+                    <img class="social-media-section__image" src="./assests/images/twitter.png" alt="twitter" />
+                </a>
+            </section>
+            <div class="footer__copyright">
+                <span>&#x000A9; 2020 ROOM SEARCH PVT LTD.</span>
+            </div>
+        </footer>
     </div>
-    <footer>
-      <a href="./contact.html" target="_self">Contact Us</a>
-      <section class="social_media">
-        <a href="https://facebook.com" target="_blank">
-          <img class="social_media_image" src="./assests/images/facebook.png" alt="facebook" />
-        </a>
-        <a href="https://instagram.com" target="_blank">
-          <img class="social_media_image" src="./assests/images/instagram.png" alt="instagram" />
-        </a>
-        <a href="https://twitter.com" target="_blank">
-          <img class="social_media_image" src="./assests/images/twitter.png" alt="twitter" />
-        </a>
-      </section>
-      <span>
-        &#x000A9; 2020 ROOM SEARCH PVT LTD.
-      </span>
-    </footer>
-  </div>
 </body>
+
 </html>

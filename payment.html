@@ -1,56 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Payment</title>
-  <link href="styles/payment.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link href="styles/payment.css" rel="stylesheet" />
 </head>
+
 <body>
-  <div class="container">
-    <header>
-      <a href="./index.html">
-        <img id="logo" src="./assests/images/logo.png" alt="logo" />
-      </a>
-      <a href="./login.html" target="_self">Login</a>
-    </header>
-    <div class="content">
-      <div class="hotel_details">
-        <img id="hotel_image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu New Delhi">
-        <br />
-        <h2>Radisson Blu Hotel</h2>
-        <span>#38 of 1,289 hotels in Delhi</span> <br /> <br />
-        <span>National Highway 8, New Delhi 110017 India</span> <br /> <br />
-      </div>
-      <div class="customer_details">
-        <span><b>Name:</b>John Doe</span> <br /> <br />
-        <span><b>Number of Adults:</b>2</span> <br /> <br />
-        <span><b>Check-in Date:</b>06/12/2020</span> <br /> <br />
-        <span><b></b>Check-out Date:</b>08/12/2020</span> <br /> <br />
-      </div>
-      <div class="payment_details">
-        <span><b>Tariff Breakdown:</b>Rs 1000 x 2 Adults x 2 Nights</span> <br /> <br />
-        <span><b></b>Total Amount:</b>4000</span> <br /> <br />
-        <a href="#" target="_self">Pay Now</a> <br /> <br />
-      </div>
+    <div class="container">
+
+        <header class="header">
+            <a href="./index.html">
+                <img class="header__logo" src="./assests/images/logo.png" alt="logo" />
+            </a>
+            <a class="header__login" href="./login.html" target="_self">Login</a>
+        </header>
+
+        <main class="content">
+            <div class="hotel-details">
+                <img class="hotel-details__image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu New Delhi">
+                <br />
+                <h2>Radisson Blu Hotel</h2>
+                <span>#38 of 1,289 hotels in Delhi</span> <br /> <br />
+                <span>National Highway 8, New Delhi 110017 India</span> <br /> <br />
+            </div>
+            <div class="customer-details">
+                <span><b>Name:</b>John Doe</span> <br /> <br />
+                <span><b>Number of Adults:</b>2</span> <br /> <br />
+                <span><b>Check-in Date:</b>06/12/2020</span> <br /> <br />
+                <span><b></b>Check-out Date:</b>08/12/2020</span> <br /> <br />
+            </div>
+            <div class="payment-details">
+                <span><b>Tariff Breakdown:</b>Rs 1000 x 2 Adults x 2 Nights</span> <br /> <br />
+                <span><b></b>Total Amount:</b>4000</span> <br /> <br />
+            </div>
+            <a href="#" target="_self">Pay Now</a> <br /> <br />
+        </main>
+
+        <footer class="footer">
+            <div class="footer__contact-us">
+                <a class="contact-us__link" href="./contact.html" target="_self">Contact Us</a>
+            </div>
+            <section class="footer__social-media-section">
+                <a class="social-media-section__link" href="https://facebook.com" target="_blank">
+                    <img class="social-media-section__image" src="./assests/images/facebook.png" alt="facebook" />
+                </a>
+                <a class="social-media-section__link" href="https://instagram.com" target="_blank">
+                    <img class="social-media-section__image" src="./assests/images/instagram.png" alt="instagram" />
+                </a>
+                <a class="social-media-section__link" href="https://twitter.com" target="_blank">
+                    <img class="social-media-section__image" src="./assests/images/twitter.png" alt="twitter" />
+                </a>
+            </section>
+            <div class="footer__copyright">
+                <span>&#x000A9; 2020 ROOM SEARCH PVT LTD.</span>
+            </div>
+        </footer>
     </div>
-    <footer>
-      <a href="./contact.html" target="_self">Contact Us</a>
-      <section class="social_media">
-        <a href="https://facebook.com" target="_blank">
-          <img class="social_media_image" src="./assests/images/facebook.png" alt="facebook" />
-        </a>
-        <a href="https://instagram.com" target="_blank">
-          <img class="social_media_image" src="./assests/images/instagram.png" alt="instagram" />
-        </a>
-        <a href="https://twitter.com" target="_blank">
-          <img class="social_media_image" src="./assests/images/twitter.png" alt="twitter" />
-        </a>
-      </section>
-      <span>
-        &#x000A9; 2020 ROOM SEARCH PVT LTD.
-      </span>
-    </footer>
-  </div>
 </body>
+
 </html>

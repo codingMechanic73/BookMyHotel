@@ -1,30 +1,123 @@
+/* General styling
+
+* {
+    margin: 0;
+    padding: 0;
+} */
+
 body {
-  margin: 0px;
-  padding: 0px;
-  background-color: #e0e0e0;
+    background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-header, footer {
-  background-color: rosybrown;
+a,
+a:hover,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: black;
+    outline: none;
 }
 
-#logo {
-  width: 60px;
-  height: 60px;
+
+/* styling header and footer */
+
+.header,
+.footer {
+    background-color: rosybrown;
+    height: 60px;
+    position: relative;
+    z-index: 10;
 }
 
-.hotel_image {
-  height: 200px;
-  width: 250px;
+.header {
+    position: sticky;
+    top: 0;
 }
 
-.hotel_card {
-  margin: 2%;
-  background-color: rgb(132,136,139);
-  width: 40%;
+.footer {
+    position: sticky;
+    bottom: 0;
 }
 
-.social_media_image {
-  height: 20px;
-  width: 22px;
+.header__logo {
+    width: 60px;
+    height: 60px;
+}
+
+.header__login {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.social-media-section__image {
+    height: 20px;
+    width: 22px;
+}
+
+.footer__contact-us {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer__social-media-section {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer__copyright {
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* styling main content */
+
+ul {
+    margin: 0 auto;
+    text-align: center;
+}
+
+li {
+    font-weight: bold;
+    display: inline-block;
+    margin: 20px;
+}
+
+.hotel-map-view {
+    display: none;
+}
+
+.hotel-list-view__image {
+    height: 200px;
+    width: 250px;
+}
+
+.hotel-list-view__card {
+    margin: 2%;
+    background-color: rgb(132, 136, 139);
+    width: 40%;
+    float: left;
+}
+
+
+/* to solve 0 height problem after floatleft */
+
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
 }
