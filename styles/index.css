@@ -26,9 +26,11 @@ a:visited {
 
 .header,
 .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: rosybrown;
     height: 60px;
-    position: relative;
     z-index: 10;
 }
 
@@ -38,20 +40,19 @@ a:visited {
 }
 
 .footer {
-    position: sticky;
     bottom: 0;
+    width: 100%;
+    position: fixed;
 }
 
 .header__logo {
     width: 60px;
     height: 60px;
+    margin: 0 2%;
 }
 
 .header__login {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+    margin: 0 2%;
 }
 
 .social-media-section__image {
@@ -60,29 +61,27 @@ a:visited {
 }
 
 .footer__contact-us {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+    margin: 0 2%;
+    order: 1;
 }
 
 .footer__social-media-section {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+    margin: 0 2%;
+    order: 3;
 }
 
 .footer__copyright {
     font-size: 10px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    order: 2;
 }
 
 
 /* styling main content */
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
 
 .city-search-section {
     height: 380px;
@@ -90,40 +89,61 @@ a:visited {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .city-search-section__input {
     font-family: inherit;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border: 1px solid transparent;
     background-color: #f1f1f1;
     padding: 10px;
     font-size: 16px;
     border-radius: 12px;
     max-width: 100%;
-    width: 470px;
 }
 
 .cities-section {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px;
 }
 
 .cities-section__links {
-    margin: 0 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .cities-section__card {
-    display: inline;
+    position: relative;
+    margin: 20px;
+}
+
+.cities-section__city-name {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f1f1f1;
+}
+
+.cities-section__card:hover .cities-section__city-name {
+    visibility: visible;
+}
+
+.cities-section__card:hover .cities-section__image {
+    opacity: 0.5;
 }
 
 .cities-section__image {
     width: 150px;
     height: 150px;
-    padding: 4%;
+    box-shadow: 10px 10px 10px grey;
     border-radius: 25%;
 }
 

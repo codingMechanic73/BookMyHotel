@@ -1,99 +1,146 @@
-/* General styling
+    /* General styling
 
 * {
     margin: 0;
     padding: 0;
 } */
+    
+    body {
+        background-color: #e0e0e0;
+        font-family: 'Ubuntu', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    a,
+    a:hover,
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: black;
+        outline: none;
+    }
+    /* styling header and footer */
+    
+    .header,
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rosybrown;
+        height: 60px;
+        z-index: 10;
+    }
+    
+    .header {
+        position: sticky;
+        top: 0;
+    }
+    
+    .footer {
+        bottom: 0;
+        width: 100%;
+        position: sticky;
+    }
+    
+    .header__logo {
+        width: 60px;
+        height: 60px;
+        margin: 0 2%;
+    }
+    
+    .header__login {
+        margin: 0 2%;
+    }
+    
+    .social-media-section__image {
+        height: 20px;
+        width: 22px;
+    }
+    
+    .footer__contact-us {
+        margin: 0 2%;
+        order: 1;
+    }
+    
+    .footer__social-media-section {
+        margin: 0 2%;
+        order: 3;
+    }
+    
+    .footer__copyright {
+        font-size: 10px;
+        order: 2;
+    }
+    /* styling main section */
+    
+    .hotel-hero-section__image {
+        height: 350px;
+    }
+    
+    .booking-details {}
+    
+    .hotel-details {
+        margin: 1% 4% 2%;
+    }
+    
+    .hero-booking-details {
+        display: flex;
+        justify-content: center;
+        max-height: 400px;
+        padding: 20px;
+        align-items: stretch;
+    }
+    
+    .hotel-hero-section {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        border: 2px solid black;
+    }
+    
+    .booking-details {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        border-width: 2px 2px 2px 0;
+        border-color: black;
+        border-style: solid;
+    }
+    
+    .booking-details__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        padding: 0 40px;
+    }
+    
+    input {
+        width: 60%;
+    }
 
-body {
-    background-color: #e0e0e0;
-    font-family: 'Ubuntu', sans-serif;
-    margin: 0;
-    padding: 0;
-}
+    .form-input {
+        display: flex; 
+        justify-content: space-between;
+        width: 100%;
+    }
 
-a,
-a:hover,
-a:link,
-a:visited {
-    text-decoration: none;
-    color: black;
-    outline: none;
-}
+    .form-input input {
+        width: 60%;
+    }
 
+    .form-submit {
+        justify-content: center;
+    } 
+    .form-submit input{
+        padding: 10px;
+        width: initial;
+        cursor: pointer;
+    } 
 
-/* styling header and footer */
-
-.header,
-.footer {
-    background-color: rosybrown;
-    height: 60px;
-    position: relative;
-    z-index: 10;
-}
-
-.header {
-    position: sticky;
-    top: 0;
-}
-
-.footer {
-    position: sticky;
-    bottom: 0;
-}
-
-.header__logo {
-    width: 60px;
-    height: 60px;
-}
-
-.header__login {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.social-media-section__image {
-    height: 20px;
-    width: 22px;
-}
-
-.footer__contact-us {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.footer__social-media-section {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.footer__copyright {
-    font-size: 10px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-
-/* styling main section */
-
-.hotel-hero-section__image {
-    height: 500px;
-    width: 500px;
-    margin: 2% 4% 0 4%;
-}
-
-.booking-details {
-    margin: 0% 4% 1% 4%;
-}
-
-.hotel-details {
-    margin: 1% 4% 2%;
-}
+    .font-cursive {
+        font-family: cursive, sans-serif;
+    }

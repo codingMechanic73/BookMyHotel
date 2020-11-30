@@ -26,9 +26,11 @@ a:visited {
 
 .header,
 .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: rosybrown;
     height: 60px;
-    position: relative;
     z-index: 10;
 }
 
@@ -38,20 +40,19 @@ a:visited {
 }
 
 .footer {
-    position: sticky;
     bottom: 0;
+    width: 100%;
+    position: fixed;
 }
 
 .header__logo {
     width: 60px;
     height: 60px;
+    margin: 0 2%;
 }
 
 .header__login {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+    margin: 0 2%;
 }
 
 .social-media-section__image {
@@ -60,39 +61,44 @@ a:visited {
 }
 
 .footer__contact-us {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+    margin: 0 2%;
+    order: 1;
 }
 
 .footer__social-media-section {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+    margin: 0 2%;
+    order: 3;
 }
 
 .footer__copyright {
     font-size: 10px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    order: 2;
 }
 
 
 /* styling main content */
 
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
 ul {
-    margin: 0 auto;
-    text-align: center;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
 }
 
 li {
     font-weight: bold;
-    display: inline-block;
-    margin: 20px;
+    padding: 20px;
+}
+
+.hotel-list-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .hotel-map-view {
@@ -105,19 +111,23 @@ li {
 }
 
 .hotel-list-view__card {
+    display: flex;
     margin: 2%;
-    background-color: rgb(132, 136, 139);
+    background-color: lightgrey;
     width: 40%;
-    float: left;
+}
+
+.hotel-list-view__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.hotel-list-view__details> :first-child {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 
 /* to solve 0 height problem after floatleft */
-
-.clearfix:after {
-    content: " ";
-    visibility: hidden;
-    display: block;
-    height: 0;
-    clear: both;
-}
