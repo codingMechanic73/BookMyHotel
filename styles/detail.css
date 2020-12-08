@@ -104,6 +104,7 @@
         justify-content: center;
         padding: 20px;
         border: 2px solid black;
+        width: 350px;
     }
     
     .booking-details {
@@ -150,4 +151,19 @@
     
     .font-cursive {
         font-family: cursive, sans-serif;
+    }
+    .checked {
+        color: orange;
+    }
+    .carousel-control-prev {
+        margin: -100px;
+        color: rosybrown;
+    }
+    .carousel-control-next {
+        margin: -100px;
+        fill: rosybrown;
+    }
+    .carousel-control-prev-icon .carousel-control-next-icon {
+        color: rosybrown;
+        fill: rosybrown;
     }

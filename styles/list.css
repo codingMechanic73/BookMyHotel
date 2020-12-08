@@ -143,5 +143,8 @@ li {
     justify-content: center;
 }
 
+.checked {
+    color: orange;
+}
 
 /* to solve 0 height problem after floatleft */
