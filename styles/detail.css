@@ -72,6 +72,12 @@
         font-size: 10px;
         order: 2;
     }
+    
+    .login__input {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 15px 0;
+    }
     /* styling main section */
     
     .hotel-hero-section__image {
@@ -87,7 +93,7 @@
     .hero-booking-details {
         display: flex;
         justify-content: center;
-        max-height: 400px;
+        max-height: 450px;
         padding: 20px;
         align-items: stretch;
     }
@@ -118,29 +124,30 @@
         padding: 0 40px;
     }
     
-    input {
-        width: 60%;
-    }
-
-    .form-input {
-        display: flex; 
-        justify-content: space-between;
-        width: 100%;
-    }
-
     .form-input input {
         width: 60%;
     }
-
+    
+    .form-input {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .form-input input {
+        width: 60%;
+    }
+    
     .form-submit {
         justify-content: center;
-    } 
-    .form-submit input{
+    }
+    
+    .form-submit input {
         padding: 10px;
         width: initial;
         cursor: pointer;
-    } 
-
+    }
+    
     .font-cursive {
         font-family: cursive, sans-serif;
     }

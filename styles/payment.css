@@ -75,6 +75,12 @@ a:visited {
     order: 2;
 }
 
+.login__input {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 0;
+}
+
 
 /* styling main content */
 

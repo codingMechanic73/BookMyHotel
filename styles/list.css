@@ -75,10 +75,16 @@ a:visited {
     order: 2;
 }
 
+.login__input {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 0;
+}
+
 
 /* styling main content */
 
-.content {
+.main-content {
     display: flex;
     flex-direction: column;
 }
@@ -102,7 +108,7 @@ li {
 }
 
 .hotel-map-view {
-    display: none;
+    /* display: none; */
 }
 
 .hotel-list-view__image {
@@ -117,6 +123,10 @@ li {
     width: 40%;
 }
 
+.hotel-list-view__card:hover {
+    background-color: rosybrown;
+}
+
 .hotel-list-view__details {
     display: flex;
     flex-direction: column;
@@ -127,6 +137,10 @@ li {
 .hotel-list-view__details> :first-child {
     font-size: 20px;
     font-weight: bold;
+}
+
+#pills-tab {
+    justify-content: center;
 }
 
 

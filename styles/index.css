@@ -75,6 +75,12 @@ a:visited {
     order: 2;
 }
 
+.login__input {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 0;
+}
+
 
 /* styling main content */
 
@@ -102,6 +108,7 @@ a:visited {
     font-size: 16px;
     border-radius: 12px;
     max-width: 100%;
+    width: 450px;
 }
 
 .cities-section {
@@ -148,5 +155,5 @@ a:visited {
 }
 
 .cities-section__view-more {
-    margin: 10px;
+    margin: 30px;
 }
