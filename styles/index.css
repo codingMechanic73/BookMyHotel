@@ -98,6 +98,7 @@ a:visited {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .city-search-section__input {
@@ -128,7 +129,7 @@ a:visited {
 
 .cities-section__card {
     position: relative;
-    margin: 20px;
+    margin: 80px;
 }
 
 .cities-section__city-name {
