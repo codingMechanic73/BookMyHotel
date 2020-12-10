@@ -32,16 +32,17 @@ a:visited {
     background-color: rosybrown;
     height: 60px;
     z-index: 10;
+    width: 100%;
 }
 
 .header {
     position: sticky;
     top: 0;
+    
 }
 
 .footer {
     bottom: 0;
-    width: 100%;
     position: fixed;
 }
 
@@ -107,8 +108,11 @@ li {
     justify-content: flex-start;
 }
 
+
 .hotel-map-view {
-    /* display: none; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .hotel-list-view__image {
@@ -120,7 +124,7 @@ li {
     display: flex;
     margin: 2%;
     background-color: lightgrey;
-    width: 40%;
+    flex: 0 1 40%;
 }
 
 .hotel-list-view__card:hover {
@@ -147,4 +151,38 @@ li {
     color: orange;
 }
 
-/* to solve 0 height problem after floatleft */
+@media only screen and (max-width: 768px) {
+    .hotel-list-view {
+        justify-content: center;
+    }
+    .hotel-list-view__card {
+        margin: 2%;
+        flex: 0 0 90%;
+    }
+    .hotel-map-view img{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .hotel-list-view {
+        justify-content: center;
+    }
+    .hotel-list-view__card {
+        padding: 0 0 5% 0;
+        flex: 0 0 90%;
+        flex-direction: column;
+    }
+
+    .hotel-list-view__image {
+        width: 100%;
+    }
+
+    .hotel-map-view img{
+        width: 90%;
+    }
+    .main-container {
+        margin-bottom: 100px;
+    }
+}
+

@@ -30,6 +30,7 @@
         background-color: rosybrown;
         height: 60px;
         z-index: 10;
+        width: 100%;
     }
     
     .header {
@@ -39,7 +40,6 @@
     
     .footer {
         bottom: 0;
-        width: 100%;
         position: sticky;
     }
     
@@ -80,35 +80,35 @@
     }
     /* styling main section */
     
-    .hotel-hero-section__image {
-        height: 350px;
+    .main_section {
+        display: flex;
+        flex-direction: column;
     }
-    
-    .booking-details {}
-    
-    .hotel-details {
-        margin: 1% 4% 2%;
-    }
-    
+
     .hero-booking-details {
         display: flex;
         justify-content: center;
-        max-height: 450px;
         padding: 20px;
-        align-items: stretch;
+        margin: 2%;
     }
-    
+
     .hotel-hero-section {
-        flex: 2;
+        flex: 3;
+        max-width: 900px;
         display: flex;
         justify-content: center;
-        padding: 20px;
+        padding: 2%;
         border: 2px solid black;
-        width: 350px;
+    }
+    
+
+    .hotel-hero-section__image {
+        max-height: 350px;
     }
     
     .booking-details {
         flex: 1;
+        width: 300px;
         display: flex;
         justify-content: center;
         border-width: 2px 2px 2px 0;
@@ -124,6 +124,7 @@
         width: 100%;
         padding: 0 40px;
     }
+
     
     .form-input input {
         width: 60%;
@@ -152,18 +153,40 @@
     .font-cursive {
         font-family: cursive, sans-serif;
     }
+
+    .hotel-details {
+        margin: 1% 4% 2%;
+    }
+    
+
     .checked {
         color: orange;
     }
-    .carousel-control-prev {
-        margin: -100px;
-        color: rosybrown;
+    .carousel {
+        max-width: 450px;
     }
-    .carousel-control-next {
-        margin: -100px;
-        fill: rosybrown;
-    }
-    .carousel-control-prev-icon .carousel-control-next-icon {
-        color: rosybrown;
-        fill: rosybrown;
-    }
+ 
+    @media only screen and (max-width: 576px) {
+        .hero-booking-details {
+            /* flex-wrap: wrap; */
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .booking-details {
+            border-top: 0;
+            border-left: 2px solid black;
+            height: 300px;
+            width: 100%;
+        }
+
+        .hotel-hero-section__image {
+            height: 250px;
+            width: 250px;
+        }
+        .carousel {
+            width: 250px;
+        }
+
+     }
+
