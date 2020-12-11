@@ -1,0 +1,85 @@
+    /* General styling
+
+* {
+    margin: 0;
+    padding: 0;
+} */
+    
+body {
+    background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+/* styling header and footer */
+
+.header,
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rosybrown;
+    height: 60px;
+    z-index: 10;
+    width: 100%;
+    padding: 2%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+}
+
+.footer {
+    bottom: 0;
+    position: fixed;
+}
+
+.header__logo {
+    width: 60px;
+    height: 60px;
+    margin: 0 2%;
+}
+
+.header__login {
+    margin: 0 2%;
+}
+
+.social-media-section__image {
+    height: 20px;
+    width: 22px;
+}
+
+.footer__contact-us {
+    margin: 0 2%;
+    order: 1;
+}
+
+.footer__social-media-section {
+    margin: 0 2%;
+    order: 3;
+}
+
+.footer__copyright {
+    font-size: 10px;
+    order: 2;
+}
+
+.login__input {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 0;
+}
+
+.main-container {
+    margin: 60px 0;
+}

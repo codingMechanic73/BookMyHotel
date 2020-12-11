@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link href="styles/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/common.css">
 </head>
 
 <body>
@@ -27,16 +28,16 @@
                     <form action="./index.html" method="GET" target="_self">
                         <div class="login__input">
                             <label for="user_name">Username:</label>
-                            <input autocomplete="username" quired type="text" name="user_name" autocomplete="false"
-                                placeholder="Enter Username" required />
+                            <input class="input__login-username" autocomplete="username" quired type="text"
+                                name="user_name" autocomplete="false" placeholder="Enter Username" required />
                         </div>
                         <div class="login__input">
                             <label for="password">Password:</label>
-                            <input autocompelete="password" required type="password" name="password"
-                                autocomplete="false" placeholder="Enter Password" required />
+                            <input class="input__login-password" autocompelete="password" required type="password"
+                                name="password" autocomplete="false" placeholder="Enter Password" required />
                         </div>
                         <div class="modal-footer">
-                            <input type="submit" value="Login" class="btn btn-primary btn-login" />
+                            <input type="submit" value="Login" class=" input__login-btn btn btn-primary btn-login" />
                         </div>
                     </form>
                 </div>
@@ -72,7 +73,7 @@
 
         <header class="header">
             <img class="header__logo" src="./assests/images/logo.png" alt="logo" />
-            <button type="button" class="header__login btn btn-light" href="./login.html" data-toggle="modal"
+            <button type="button" class="header__login-btn btn-light" href="./login.html" data-toggle="modal"
                 data-target="#loginModal">Login</button>
         </header>
 
@@ -81,61 +82,72 @@
                 <input class="city-search-section__input" type="search" placeholder="City" name="search_city" />
             </section>
             <section class="cities-section">
-                <div class="cities-section__links">
-                    <div class="cities-section__card">
-                        <a class="cities-section__link" href="./list.html" target="_self">
+                <section class="cities-section--row1">
+                    <div class="cities-section__links">
+                        <div class="cities-section__card">
+                            <a class="cities-section__link" href="./list.html" target="_self">
+                                <img id="city-image1" class="cities-section__image"
+                                    src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
+                                    alt="Delhi" />
+                                <div class="cities-section__city-name">Delhi</div>
+                            </a>
+                        </div>
+                        <div class="cities-section__card">
+                            <img id="city-image2" class=" cities-section__image "
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg " alt="Goa " />
+                            <div class="cities-section__city-name ">Goa</div>
+                        </div>
+                        <div class="cities-section__card ">
+                            <img id="city-image3" class="cities-section__image "
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg "
+                                alt="Hydrabad " />
+                            <div class="cities-section__city-name ">Hydrabad</div>
+                        </div>
+                        <div class="cities-section__card ">
+                            <img id="city-image4" class="cities-section__image "
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg "
+                                alt="kolkata " />
+                            <div class="cities-section__city-name ">kolkata</div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="cities-section--row2">
+                    <div class="cities-section__links">
+                        <div class="cities-section__card">
+                            <img id="city-image2" class=" cities-section__image "
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg "
+                                alt="Chennai " />
+                            <div class="cities-section__city-name ">Chennai</div>
+                        </div>
+                        <div class="cities-section__card ">
+                            <img id="city-image3" class="cities-section__image "
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg"
+                                alt="Agra " />
+                            <div class="cities-section__city-name ">Agra</div>
+                        </div>
+                        <div class="cities-section__card ">
+                            <img id="city-image4" class="cities-section__image "
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg "
+                                alt="Jaipur " />
+                            <div class="cities-section__city-name ">Jaipur</div>
+                        </div>
+                        <div class="cities-section__card">
                             <img id="city-image1" class="cities-section__image"
-                                src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg"
                                 alt="Delhi" />
-                            <div class="cities-section__city-name">Delhi</div>
-                        </a>
+                            <div class="cities-section__city-name">Bengaluru</div>
+                        </div>
                     </div>
-                    <div class="cities-section__card">
-                        <img id="city-image2" class=" cities-section__image "
-                            src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg " alt="Goa " />
-                        <div class="cities-section__city-name ">Goa</div>
-                    </div>
-                    <div class="cities-section__card ">
-                        <img id="city-image3" class="cities-section__image "
-                            src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg "
-                            alt="Hydrabad " />
-                        <div class="cities-section__city-name ">Hydrabad</div>
-                    </div>
-                    <div class="cities-section__card ">
-                        <img id="city-image4" class="cities-section__image "
-                            src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg "
-                            alt="kolkata " />
-                        <div class="cities-section__city-name ">kolkata</div>
-                    </div>
-                    <div class="cities-section__card">
-                        <img id="city-image2" class=" cities-section__image "
-                            src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg " alt="Chennai " />
-                        <div class="cities-section__city-name ">Chennai</div>
-                    </div>
-                    <div class="cities-section__card ">
-                        <img id="city-image3" class="cities-section__image "
-                            src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg" alt="Agra " />
-                        <div class="cities-section__city-name ">Agra</div>
-                    </div>
-                    <div class="cities-section__card ">
-                        <img id="city-image4" class="cities-section__image "
-                            src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg "
-                            alt="Jaipur " />
-                        <div class="cities-section__city-name ">Jaipur</div>
-                    </div>
-                    <div class="cities-section__card">
-                        <img id="city-image1" class="cities-section__image"
-                            src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg"
-                            alt="Delhi" />
-                        <div class="cities-section__city-name">Bengaluru</div>
-                    </div>
-                </div>
+                </section>
                 <button type="submit" class="cities-section__view-more btn btn-secondary" href="#">View more</button>
             </section>
+            </section>
+
         </main>
 
-
-        <footer class="footer ">
+        <footer class="footer">
             <div class="footer__contact-us ">
                 <button type="button" class="btn btn-info" href="./contact.html" data-toggle="modal"
                     data-target="#contactModal">Contact Us</button>
@@ -156,7 +168,8 @@
             </div>
         </footer>
     </div>
-
+    <script src="./scripts/common.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
